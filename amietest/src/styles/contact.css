@@ -1,0 +1,81 @@
+/* Contact Form */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  border: solid 2px #F62AA0;
+  outline: none;
+  background: transparent;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #F62AA0;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #C57CA6;
+}
+
+.box {
+  border-radius: 5px;
+  background-color: #202027;
+  padding: 20px;
+  margin: 1em;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.icon-text-size {
+  font-size:4.5rem;
+ margin-left: 1.5em;
+}
+
+.svg-align {
+  vertical-align: middle;
+}
+
+.star-title {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 4rem;
+  margin-left: 1em;
+}
+
+.text {
+  margin-left: 2em;
+}
+

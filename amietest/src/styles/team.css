@@ -1,0 +1,136 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+    minmax(500px,1fr));
+    padding: 20px;
+    grid-gap: 40px;
+    text-align: center;
+    color: #fff;
+    margin-top: 5em;
+    }
+    
+    .card {
+    background-color: #1c1b29;
+    border-radius:20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
+    }
+    
+    
+    img {
+        width: 100%;
+        display: block;
+        border-radius: 20px 20px 0 0;
+    }
+    
+    h3 {
+        font-size: 96px;
+        font-family: WindSong;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    h4 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size:48px;
+        color: #F62AA0;
+        font-family: Poppins;
+        font-weight: 500;
+    }
+
+   
+
+    /* Hero Image */
+    .hero {
+        position: relative; 
+        min-height: 60rem;
+        width: 100%;
+    }
+    
+    .hero::before {    
+          content: "";
+          background-image: url('/src/images/Salon-hero.png');
+          background-size: cover;
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          bottom: 0px;
+          left: 0px;
+    }
+    
+    .hero-text {
+        margin-left: 4em;
+    }
+    
+    #hero-title {
+        font-size:4.5rem;
+    }
+    
+    #hero-content {
+        font-size:2.25rem;
+        max-width: 45ch;
+    }
+    
+    .gradient-text {
+        color: #F62AA0;
+    }
+
+    /* float images */
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 35px;
+      }
+      
+      .column > img {
+          object-fit: cover;
+          height:445px;
+          border-radius: 5px;
+      }
+      
+      /* Clear floats after image containers */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      
+      @media screen and (max-width: 200px) {
+          .column {
+            width: 100%;
+          }
+        }
+
+        @media screen and (max-width: 780px){
+        .row {
+            display:none;
+        }
+        }
+
+        .blocks {
+            
+        }
+
+        .block__left {
+            flex-direction: column;
+        }
+
+        .carl {
+            background: #202027;
+            display: flex;
+        }
+
+        .donna {
+            background: #202027;
+            display: flex;
+            margin-top: 40px;
+        }
+
+        .fix {
+            font-family: Poppins;
+        }
+
+        .owner-detail {
+            font-family: Poppins;
+            color: #F62AA0;
+        }
